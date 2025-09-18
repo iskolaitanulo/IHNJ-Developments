@@ -1005,12 +1005,14 @@ canvas{
 </head>
 
 <header>
-<div class="sidenav">
+<div class="sidenav" id="mySidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <p><a href="index.html">Home</a></p>
   <p><a href="dev.html">Developments</a></p>
   <p><a href="sup.html">Support us!</a></p>
 </div> 
 </header>
+<span onclick="openNav()" class="open">&#9776;</span>
 <div class="main">
     <h1>Our work</h1>
     <div>
@@ -1133,5 +1135,12 @@ canvas{
   
 
 </div> <!-- body_0 -->
+<script>function openNav() {
+  document.getElementById("mySidenav").style.width = "240px";
+}
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+} 
+</script>
 </body></html>
 

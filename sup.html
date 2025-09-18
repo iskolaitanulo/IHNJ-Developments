@@ -9,11 +9,13 @@
 </head>
 <body>
 <header>
-<div class="sidenav">
+<div class="sidenav" id="mySidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <p><a href="index.html">Home</a></p>
   <p><a href="dev.html">Developments</a></p>
   <p><a href="sup.html">Support us!</a></p>
 </div> 
+<span onclick="openNav()" class="open">&#9776;</span>
 </header>
     <h1>SUPPORT US!</h1>
     <div>
@@ -22,5 +24,12 @@
     <a href="https://buymeacoffee.com/nincspenzemkavera"><h3>Support me here</h3></a>
     <img src="eefocc.gif" alt="shittygif">
     <h3>They will be executed if I don't get my eeffoc</h3>
+<script>function openNav() {
+  document.getElementById("mySidenav").style.width = "240px";
+}
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+} 
+</script>
 </body>
 </html>
