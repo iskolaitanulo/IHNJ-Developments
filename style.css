@@ -79,14 +79,55 @@ h2 {
   }
   .sidebar a {float: left;}
   div.content {margin-left: 0;}
-}
 
+  h2 {
+  background-color: #818181;
+  width: fit-content;
+  font-size: 3vw;
+  color: white;
+}
+h1{
+    text-align: center;
+    font-size: 5vw;
+}
+.foot{
+    text-align: center;
+    size: 50%;
+    padding-top: 10%;
+    font-size: 2vw;
+}
+.open{
+  font-size: 4vw;
+}
+.yap{
+  font-size: 2vw;
+}
+}
 /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
 @media screen and (max-width: 400px) {
   .sidebar a {
     text-align: center;
     float: none;
   }
+   h2 {
+  background-color: #818181;
+  width: fit-content;
+  font-size: 3vw;
+  color: white;
+}
+h1{
+    text-align: center;
+    font-size: 5vw;
+}
+.foot{
+    text-align: center;
+    size: 50%;
+    padding-top: 10%;
+    font-size: 2vw;
+}
+.open{
+  font-size: 4vw;
+}
 }
 
 .foot{
@@ -98,6 +139,7 @@ img{
     width: 35%;
     height: 35%;
     padding-left: 30%; 
+     max-width:100%;
 }
 
 .yap{
@@ -112,7 +154,14 @@ img{
 
 .furry{
     padding-left: 63%;
-
+    max-width:100%;
     width: 25%;
     height: 25%;
+}
+
+.shitty{
+  width: 35%;
+  height: 35%;
+  padding-left: 32%;
+  max-width:100%;
 }
