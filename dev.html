@@ -160,7 +160,7 @@
 		hash = pico8_state.sound_volume;
 		if (pico8_state.is_paused) hash += 0x100;
 		if (p8_touch_detected)     hash += 0x200;
-		if (is_fullscreen)         hash += 0x400;
+		if (is_fullscreen)         hash += 0x200;
 
 		if (p8_buttons_hash == hash)
 		{
@@ -289,7 +289,7 @@
 					// menu button: half as high as X O button
 					// stretch across right-hand half above X O buttons
 					if (x > w - r*3) 
-						b |= 0x40;
+						b |= 0x20;
 				}
 				else if (x < w/2 && x < r*6)
 				{
@@ -1142,5 +1142,7 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 } 
 </script>
+<link rel="stylesheet" href="webcontroller.css">
+<script src="webcontroller.js"></script>
 </body></html>
 
