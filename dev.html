@@ -482,7 +482,7 @@
 			// same as touch event handling
 			var w = window.innerWidth;
 			var h = window.innerHeight;
-			var r = Math.min(w,h) / 12;
+			var r = Math.min(w,h) / 6;
 
 			if (r > 40) r = 40;
 
@@ -497,7 +497,7 @@
 			el = document.getElementById("controls_left_panel");
 			el.style.left = 0;
 			el.style.top = h-r*6;
-			el.style.width = r6;
+			el.style.width = r*6;
 			el.style.height = r*6;
 			if (el.getAttribute("src") != p8_gfx_dat["controls_left_panel"]) // optimisation: avoid reload? (browser should handle though)
 				el.setAttribute("src", p8_gfx_dat["controls_left_panel"]);
