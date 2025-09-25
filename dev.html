@@ -487,18 +487,18 @@
 			if (r > 40) r = 40;
 
 			el = document.getElementById("controls_right_panel");
-			el.style.left = w-r*6;
-			el.style.top = h-r*7;
-			el.style.width = r*6;
-			el.style.height = r*7;
+			el.style.left = w-r*3;
+			el.style.top = h-r*4;
+			el.style.width = r*3;
+			el.style.height = r*4;
 			if (el.getAttribute("src") != p8_gfx_dat["controls_right_panel"]) // optimisation: avoid reload? (browser should handle though)
 				el.setAttribute("src", p8_gfx_dat["controls_right_panel"]);
 
 			el = document.getElementById("controls_left_panel");
 			el.style.left = 0;
-			el.style.top = h-r*6;
-			el.style.width = r*6;
-			el.style.height = r*6;
+			el.style.top = h-r*3;
+			el.style.width = r*3;
+			el.style.height = r*3;
 			if (el.getAttribute("src") != p8_gfx_dat["controls_left_panel"]) // optimisation: avoid reload? (browser should handle though)
 				el.setAttribute("src", p8_gfx_dat["controls_left_panel"]);
 			
