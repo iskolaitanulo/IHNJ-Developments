@@ -1,4 +1,7 @@
-
+.open{
+  font-size: 50px;
+  padding-left: 97%;
+}
 
 h1{
     text-align: center;
@@ -64,10 +67,7 @@ body{
   font-size: 36px;
   margin-left: 50px;
 }
-span{
-  padding-left: 97%;
-  font-size: 50px;
-}
+
 /* Style page content */
 h2 {
   background-color: #575757;
@@ -88,12 +88,12 @@ h2 {
   h2 {
   background-color: #575757;
   width: fit-content;
-  font-size: 3vw;
+  font-size: 7vw;
   color: white;
 }
 h1{
     text-align: center;
-    font-size: 5vw;
+    font-size: 12vw;
 }
 .foot{
     text-align: center;
@@ -101,11 +101,16 @@ h1{
     padding-top: 10%;
     font-size: 2vw;
 }
-.open{
+.yap{
   font-size: 4vw;
 }
-.yap{
-  font-size: 2vw;
+
+.open{
+  font-size: 10vw;
+  padding-left: 90%;
+}
+#name{
+  font-size: 7vw;
 }
 }
 /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
@@ -117,12 +122,12 @@ h1{
    h2 {
   background-color: #575757;
   width: fit-content;
-  font-size: 3vw;
+  font-size: 5vw;
   color: white;
 }
 h1{
     text-align: center;
-    font-size: 5vw;
+    font-size: 10vw;
 }
 .foot{
     text-align: center;
@@ -169,4 +174,66 @@ img{
   height: 35%;
   padding-left: 32%;
   max-width:100%;
+}
+.staff {
+  background-color: white;
+  max-width: 600px;
+  padding: 40px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px gray;
+  transition: transform 0.3s, background-color 0.3s ease;
+  display:flexbox;
+}
+
+
+#name{
+  text-align: center;
+  margin-left: 42%;
+}
+#name2{
+  text-align: center;
+  margin-left: calc(32% + 1px);
+}
+#name3{
+  text-align: center;
+  margin-left: 45%;
+}
+.staff:hover {
+  background-color:rgb(103, 103, 238) ;
+  transform: scale(1.1);
+}
+.linkin {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.linkin a {
+  text-decoration: none;
+  font-size: 1em;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+  background-color:  #575757;
+  transition: background-color 0.3s ease;
+}
+
+.linkin a:hover {
+  background-color: orangered;
+}
+
+.linkin a:active {
+  background-color: midnightblue;
+}
+
+.info{
+ max-height: fit-content;
+  text-align: center;
+}
+
+.staffpic{
+  padding-left: 0%;
+  margin-left: 32%; 
+  border-radius: 10px;
 }
