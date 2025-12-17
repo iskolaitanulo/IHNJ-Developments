@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The offical IHNJ Job application webpage.">
+    <meta name="keywords" content="Development, I_Have_No_Job, wallball">
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="jobapps.css" />
+  </head>
+  <body>
+    <header>
+<div class="sidenav" id="mySidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <p><a href="index.html">Home</a></p>
+  <p><a href="dev.html">Developments</a></p>
+  <p><a href="staff.html">Staff</a></p>
+  <p><a href="jobapp.html">Join us!</a></p>
+  <p><a href="sup.html">Support us!</a></p>
+</div> 
+</header>
+<span onclick="openNav()" class="open">&#9776;</span>
+
+  <main class="container">
+    <h1 class="title center">Job Application  </h1>
+    <p class="description center">Töltsd ki ezt a fost.</p>
+
+     <form>
+        <fieldset>
+          <legend>Személyes adataid(Kínaiaknak el fogom adni)</legend>
+          <label for="name">Teljes név: </label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            required
+            placeholder="pl:Végh Béla"
+          />
+
+          <label for="email">Email: </label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            required
+            placeholder="pl:pornosjoska3@citromail.hu"
+          />
+        </fieldset>
+        
+        <fieldset>
+          <legend>Nem veszünk fel úgyse de jelöld be</legend>
+          <label for="position" class="position">Pozíció:</label>
+            <select id="position">
+                <option>gooner</option>
+                <option>67 specialist</option>
+                <option>Social media manager</option>
+                <option>Furry</option>
+            </select> <br>
+        </fieldset>
+
+        <fieldset>
+          <legend>Mennyit akarsz dolgozni csicska</legend>
+          <label class="time" for="fulltime">Full-time: </label>
+          <input
+            id="time"
+            class="time-radio-btn"
+            type="radio"
+            name="time"
+            value="fulltime"
+            checked
+          />
+
+          <label class="time" for="parttime">Part-time: </label>
+          <input
+            id="phone"
+            class="time-radio-btn"
+            type="radio"
+            name="time"
+            value="parttime"
+          />
+          <label class="time" for="sometime">Some-time: </label>
+          <input
+            id="sometime"
+            class="time-radio-btn"
+            type="radio"
+            name="time"
+            value="sometime"
+          />
+        </fieldset>
+
+        <fieldset>
+          <legend>Addícionális kommentálási lehetőség megadatás</legend>
+          <label for="notes"
+            >Írd le ide hogy mekkora egy rabszolga talpnyaló kis geci lennél éhbérért miközben én yacthozok</label
+          >
+          <textarea id="notes" name="notes" rows="4" cols="50"></textarea>
+        </fieldset>
+
+        <button class="submit-btn" type="submit">Submit</button>
+      </form>
+  </main>
+      <script>function openNav() {
+      document.getElementById("mySidenav").style.width = "240px";
+    }
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    } 
+    </script>
+  </body>
+</html>
