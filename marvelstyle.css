@@ -1,0 +1,44 @@
+p{
+    text-align: center;
+    margin: auto;
+    padding-bottom: 50px;
+}
+.radom {
+  display: block;
+  margin: 0 auto;
+  padding: bottom 50px; ;
+}
+h1{
+    text-align: center;
+}
+
+.collapsible {
+  background-color: #777;
+  margin-top: 50px;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 40%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+
+.jeffery{
+  position: absolute;
+  left: 75%;
+  top: 60%;
+}

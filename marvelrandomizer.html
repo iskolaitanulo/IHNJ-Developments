@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="marvelstyle.css">
+    <title>Marvel Rivals randomizer</title>
+</head>
+
+<body>
+    
+    <h1>Marvel Rivals randomizer</h1>
+    <div>
+        <p id="randomizer"></p>
+    </div>
+    <button onclick="document.getElementById('randomizer').innerHTML =  get_random()" id="randombtn" class="radom">Randomize</button>
+
+    <button class="collapsible">Customize:</button>
+    <div class="content">
+    <h2><label for="allTank">Tank</label></h2>
+    <input type="checkbox" id="allTank" onchange="selectAllTank()" hidden>
+    <input type="checkbox" id="angela" name="angela" value="angela" class="tank" checked>
+    <label for="angela"> Angela</label>
+    <input type="checkbox" id="hulk" name="hulk" value="hulk" class="tank" checked>
+    <label for="hulk"> Hulk</label>
+    <input type="checkbox" id="drStrange" name="drStrange" value="drStrange" class="tank" checked>
+    <label for="drStrange"> Doctor Strange</label>
+    <input type="checkbox" id="capitanA" name="capitanA" value="capitanA" class="tank" checked>
+    <label for="capitanA"> Capitan America</label>
+    <input type="checkbox" id="groot" name="groot" value="groot" class="tank" checked>
+    <label for="groot"> Groot</label> <br>
+    <input type="checkbox" id="venom" name="venom" value="venom" class="tank" checked>
+    <label for="venom"> Venom</label>
+    <input type="checkbox" id="magneto" name="magneto" value="magneto" class="tank" checked>
+    <label for="magneto"> Magneto</label>
+    <input type="checkbox" id="thor" name="thor" value="thor" class="tank" checked>
+    <label for="thor"> Thor</label>
+    <input type="checkbox" id="peni" name="peni" value="peni" class="tank" checked>
+    <label for="peni"> Peni Parker</label>
+    <input type="checkbox" id="thing" name="thing" value="thing" class="tank" checked>
+    <label for="thing"> The Thing</label> <br>
+    <input type="checkbox" id="emma" name="emma" value="emma" class="tank" checked>
+    <label for="emma"> Emma Frost</label>
+    <input type="checkbox" id="dino" name="dino" value="dino" class="tank" checked>
+    <label for="dino"> Devil Dino</label>
+    <input type="checkbox" id="rouge" name="rouge" value="rouge" class="tank" checked>
+    <label for="rouge"> Rouge</label>
+    <input type="checkbox" id="deadpooltank" name="deadpooltank" value="deadpooltank" class="tank" checked>
+    <label for="deadpooltank"> Deadpool(tank)</label>
+    <h2><label for="allDuelist">Duelist</label></h2>
+    <input type="checkbox" id="allDuelist" onchange="selectAllDuelist()" hidden>
+    <input type="checkbox" id="punisher" name="punisher" value="punisher" class="duelist" checked>
+    <label for="punisher"> Punisher</label>
+    <input type="checkbox" id="storm" name="storm" value="storm" class="duelist" checked>
+    <label for="storm"> Storm</label>
+    <input type="checkbox" id="torch" name="torch" value="torch" class="duelist" checked>
+    <label for="torch"> Human Torch</label>
+    <input type="checkbox" id="hawkeye" name="hawkeye" value="hawkeye" class="duelist" checked>
+    <label for="hawkeye"> Hawkeye</label>
+    <input type="checkbox" id="hela" name="hela" value="hela" class="duelist" checked>
+    <label for="hela"> Hela</label> <br>
+    <input type="checkbox" id="blackPanther" name="blackPanther" value="blackPanther" class="duelist" checked>
+    <label for="blackPanther"> Black Panther</label>
+    <input type="checkbox" id="magik" name="magik" value="magik" class="duelist" checked>
+    <label for="magik"> Magik</label>
+    <input type="checkbox" id="moonKnight" name="moonKnight" value="moonKnight" class="duelist" checked>
+    <label for="moonKnight"> Moon Knight</label>
+    <input type="checkbox" id="squirrel" name="squirrel" value="squirrel" class="duelist" checked>
+    <label for="squirrel"> Squirrel Girl</label>
+    <input type="checkbox" id="widow" name="widow" value="widow" class="duelist" checked>
+    <label for="widow"> Black Widow</label> <br>
+    <input type="checkbox" id="ironMan" name="ironMan" value="ironMan" class="duelist" checked>
+    <label for="ironMan"> Iron Man</label>
+    <input type="checkbox" id="spider" name="spider" value="spider" class="duelist" checked>
+    <label for="spider"> Spider-man</label>
+    <input type="checkbox" id="witch" name="witch" value="witch" class="duelist" checked>
+    <label for="witch"> Scarlet Witch</label>
+    <input type="checkbox" id="fantastic" name="fantastic" value="fantastic" class="duelist" checked>
+    <label for="fantastic"> Mister Fantastic</label>
+    <input type="checkbox" id="winterSoldier" name="winterSoldier" value="winterSoldier" class="duelist" checked>
+    <label for="winterSoldier"> Winter Soldier</label> <br>
+    <input type="checkbox" id="starlord" name="starlord" value="starlord" class="duelist" checked>
+    <label for="starlord"> Star-lord</label>
+    <input type="checkbox" id="blade" name="blade" value="blade" class="duelist" checked>
+    <label for="blade"> Blade</label>
+    <input type="checkbox" id="namor" name="namor" value="namor" class="duelist" checked>
+    <label for="namor"> Namor</label> 
+    <input type="checkbox" id="psylocke" name="psylocke" value="psylocke" class="duelist" checked>
+    <label for="psylocke"> Psylocke</label>
+    <input type="checkbox" id="wolv" name="wolv" value="wolv" class="duelist" checked>
+    <label for="wolv"> Wolverine</label> <br>
+    <input type="checkbox" id="ironFist" name="ironFist" value="ironFist" class="duelist" checked>
+    <label for="ironFist"> Iron Fist</label>
+    <input type="checkbox" id="phoenix" name="phoenix" value="phoenix" class="duelist" checked>
+    <label for="phoenix"> Phoenix</label>
+    <input type="checkbox" id="dd" name="dd" value="dd" class="duelist" checked>
+    <label for="dd"> Dare Devil</label> 
+    <input type="checkbox" id="deadpooldps" name="deadpooldps" value="deadpooldps" class="duelist" checked>
+    <label for="deadpooldps"> Deadpool(dps)</label>
+    <input type="checkbox" id="elsa" name="elsa" value="elsa" class="duelist" checked>
+    <label for="elsa"> Elsa Bloodstone</label> <br>
+    <input type="checkbox" id="blackCat" name="blackCat" value="blackCat" class="duelist" checked>
+    <label for="blackCat"> Black Cat</label>
+    <input type="checkbox" id="cyclops" name="cyclops" value="cyclops" class="duelist" checked>
+    <label for="cyclops"> Cyclops</label>
+     <h2><label for="allSupport">Support</label></h2>
+    <input type="checkbox" id="allSupport" onchange="selectAllSupport()" hidden>
+    <input type="checkbox" id="loki" name="loki" value="loki" class="support" checked>
+    <label for="loki">  Loki</label>
+    <input type="checkbox" id="mantis" name="mantis" value="mantis" class="support" checked>
+    <label for="mantis"> Mantis</label>
+    <input type="checkbox" id="rr" name="rr" value="rr" class="support" checked>
+    <label for="rr"> Rocket Racoon</label>
+    <input type="checkbox" id="cd" name="cd" value="cd" class="support" checked>
+    <label for="cd"> Cloak & Daggers</label> 
+    <input type="checkbox" id="ultron" name="ultron" value="ultron" class="support" checked>
+    <label for="ultron"> Ultron</label> <br>
+    <input type="checkbox" id="luna" name="luna" value="luna" class="support" checked>
+    <label for="luna"> Luna Snow</label>
+    <input type="checkbox" id="adam" name="adam" value="adam" class="support" checked>
+    <label for="adam"> Adam Warlock</label>
+    <input type="checkbox" id="jeff" name="jeff" value="jeff" class="support" checked>
+    <label for="jeff"> Jeff The Land Shark</label>
+    <input type="checkbox" id="invis" name="invis" value="invis" class="support" checked>
+    <label for="invis"> Invisible Woman</label> 
+    <input type="checkbox" id="gambit" name="gambit" value="gambit" class="support" checked>
+    <label for="gambit"> Gambit</label> <br>
+    <input type="checkbox" id="fox" name="fox" value="fox" class="support" checked>
+    <label for="fox"> White fox</label>
+    <input type="checkbox" id="deadpoolsup" name="deadpoolsup" value="deadpoolsup" class="support" checked>
+    <label for="deadpoolsup"> Deadpool(support)</label>
+    </div>
+
+    <div class="jeffery">
+
+        <img src="jeffes.gif" alt="jeff spinnin">
+    </div>
+</body>
+</html>
+<script src="marvelscript.js"></script>
