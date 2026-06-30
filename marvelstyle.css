@@ -33,8 +33,17 @@ p{
   .button-54 {
     padding: 0.25em 0.75em;
   }
-}
+  }
 
+@media (max-width: 1024px) {
+  .jefftip{
+  position: absolute;
+  right: 5vh;
+  top: -10vh;
+  font-size: 70%;
+}
+  }
+  
 .collapsible {
   background-color: #777;
   margin-top: 50px;
@@ -59,14 +68,16 @@ p{
   overflow: hidden;
   transition: max-height 0.2s ease-out;
   border: none;
-  border-radius: 30px;
+  border-radius: 20px;
   background-color: rgb(180, 180, 180);
 }
 
 .jeffery{
   position: absolute;
-  left: 75%;
-  top: 60%;
+  left: clamp(55%, 80vw, 78%);
+  top: clamp(40px, 50vh, 600px);
+  width: clamp(160px, 22vw, 280px);
+
 }
 
 h1{
@@ -87,3 +98,24 @@ h2 {
 }
 
 
+.jefftip{
+  margin: 0 0 10px 0;
+}
+
+.jeffery img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 700px) {
+  .jeffery{
+    position: static;
+    width: 200px;
+    margin: 30px auto 0;
+  }
+  .jefftip{
+     position: static;
+     text-align: center;
+  }
+}
