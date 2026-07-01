@@ -42,6 +42,15 @@ p{
   top: -10vh;
   font-size: 70%;
 }
+  .content{
+  padding: 0 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(180, 180, 180);
+  }
   }
   
 .collapsible {
